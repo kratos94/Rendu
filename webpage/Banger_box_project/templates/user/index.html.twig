@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Users{% endblock %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+
+<table class="table table-dark">
+<tr>
+	<th>username</th>
+	<th>email</th>
+</tr>
+{% for t in user %}
+	<tr>
+		<td>{{ t.username }}</td>
+		<td>{{ t.email }}
+		{% for m in t.email %}
+    	{{ m }}
+	<br>
+		{% endfor %}
+		</td>
+		<td>{{ t.admin }}</td>
+	</tr>
+{% endfor %}
+</table>	
+
+		
+
+{% endblock %}
+
+{% block javascripts %}{% endblock %}

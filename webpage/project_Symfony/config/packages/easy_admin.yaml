@@ -1,0 +1,24 @@
+easy_admin:
+    entities:
+      User:
+        class: App\Entity\User
+        form:
+          fields:
+            - email
+            - property: 'roles' 
+              type: 'choice'
+              type_options: 
+                expanded: true
+                multiple: true
+                choices: {'ROLE_USER': 'ROLE_USER', 'ROLE_ADMIN': 'ROLE_ADMIN'}
+
+#        # List the entity class name you want to manage
+      Movies:
+        class: App\Entity\Movies
+#        form:
+#          fields:
+      Categories:
+        class: App\Entity\Categories
+#        form:
+#          fields:
+

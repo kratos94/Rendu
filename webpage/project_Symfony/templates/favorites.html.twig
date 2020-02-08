@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+{% for t in favorites %}
+	{{ t }}
+{% endfor %}
+
+		
+
+{% endblock %}
+
+{% block javascripts %}{% endblock %}

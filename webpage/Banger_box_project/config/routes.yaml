@@ -1,0 +1,11 @@
+home:
+    path: /home
+    controller: App\Controller\HomeController::home_view
+
+user:
+    path: /user
+    controller: App\Controller\UserController::user_view
+
+music:
+    path: /music
+    controller: App\Controller\MusicController::music_view

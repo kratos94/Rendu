@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+		<select id="selected_content">
+			<option value="empty" selected hidden>...</option>
+			<option value="email">email</option>
+			<option value="note">note</option>
+			<option value="todo">todo</option>
+		</select>
+		<input id= "input_content" type="text" value ="" placeholder="">
+		<button id="btn_add" type="button">Add on my todolist</button>
+		<button type="button" id="btn_load"></button>
+		<br/>
+		<input id="input_search" name="" placeholder="Search your element">
+		<div class="list">
+			<ul id="todolist"></ul>
+		</div>
+		<script src="script.js"></script>
+</body>
+</html>

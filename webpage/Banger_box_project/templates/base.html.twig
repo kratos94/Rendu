@@ -1,0 +1,40 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}BngbxStdio{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    	<nav class="navbar navbar-inverse navbar-fixed-top">
+    	  <div class="container-fluid">
+    	    <div class="navbar-header">
+    	      <a class="navbar-brand" href="/home">BangerBoxStudio</a>
+    	    </div>
+    	    <ul class="nav navbar-nav">
+    	      <li class="active"><a href="/home">Home</a></li>
+    	      <li><a href="/music">Music</a></li>
+    	      <li><a href="/user">User</a></li>
+    	    </ul>
+    	  </div>
+    	</nav>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

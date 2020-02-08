@@ -1,0 +1,34 @@
+use MERN-db
+db.createCollection("member", {
+	validator: { 
+		$jsonSchema:{ 
+			bsonType: "object",
+			required: ["login", "email", "password", "type"],
+			properties:{
+				login:{
+					bsonType: "string",
+					description: "no correspon",
+					minLength: 5,
+					maxLength: 20
+				},
+
+				email:{
+					bsonType: "string",
+					description:" has de ficr un email correcte",
+					pattern: "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$"
+				},
+
+				password:{
+					bsonType: "string",
+					description:"has de ficar una contrasenya valida"
+				},
+
+				type:{
+					bsonType: "bool",
+					description: "has de seleccionar un tipus"
+				}
+
+			}, 
+   	}
+	}	
+})

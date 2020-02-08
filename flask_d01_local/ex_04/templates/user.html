@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+
+{% block title %}{% endblock %}
+{% block content %}
+<ul>
+{% for m in users %}
+ 	<li>{{ m.email }} <a href="/user/{{ m.rowid }}">Edit</a> </li>
+{% endfor %}
+<ul>
+{% endblock %}

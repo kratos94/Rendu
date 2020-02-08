@@ -1,0 +1,22 @@
+home:
+    path: /home
+    controller: App\Controller\HomeController::home_view
+
+user:
+    path: /user
+    controller: App\Controller\UserController::user_view
+
+favorites:
+    path: /favorites
+    controller: App\Controller\FavoritesController::favorites_view
+
+movies:
+    path: /movies
+    controller: App\Controller\MoviesController::movies_view 
+
+categories:
+    path: /categories
+    controller: App\Controller\CategoriesController::categories_view    
+
+
+

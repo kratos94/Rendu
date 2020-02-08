@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+<table>
+<tr>
+	<th>Email</th>
+	<th>Password</th>
+</tr>
+{% for t in user %}
+	<tr>
+		<td>{{ t.email }}</td>
+		<td>{{ t.password }}</td>
+	</tr>
+{% endfor %}
+</table>
+		
+
+{% endblock %}
+
+{% block javascripts %}{% endblock %}
